@@ -1,0 +1,55 @@
+<div class="card">
+    <div class="card-header">
+        <b>Operaciones</b>
+    </div>
+    <div class="row">
+        <h3>Básicas</h3>
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="" class="form-label">Numero 1</label>
+                <input type="text" class="form-control" name="num1" placeholder="Ingresa un número" [(ngModel)]="num1">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Numero 2</label>
+                <input type="text" class="form-control" name="num2" placeholder="Ingresa un número" [(ngModel)]="num2">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Tipo de Operación</label>
+                <form>
+                    <input type="radio" id="suma" name="operaciones" value="suma" [(ngModel)]="operacion">
+                    <label for="suma">SUMA</label><br>
+                    <input type="radio" id="resta" name="operaciones" value="resta" [(ngModel)]="operacion">
+                    <label for="resta">RESTA</label><br>
+                    <input type="radio" id="multi" name="operaciones" value="multi" [(ngModel)]="operacion">
+                    <label for="multi">MULTIPLICACIÓN</label><br>
+                    <input type="radio" id="divi" name="operaciones" value="divi" [(ngModel)]="operacion">
+                    <label for="divi">DIVISIÓN</label><br>
+                </form>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" (click)="sumar()">Calcular</button>
+            </div>
+        </div>
+        <div class="col-6">
+            <h4>Resultado</h4>
+            <p>{{resultado}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <h3>Tablas de multiplicar</h3>
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="" class="form-label">Escribe un número</label>
+                <input type="text" class="form-control" name="num1" placeholder="Ingresa un número" [(ngModel)]="num3">
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary" (click)="tabla()">Calcular</button>
+            </div>
+        </div>
+        <div class="col-6">
+            <h4>Resultado</h4>
+            <p *ngFor="let resultado of tablas">{{resultado}}</p> <!-- Ganera el salto -->
+        </div>
+    </div>
+</div>

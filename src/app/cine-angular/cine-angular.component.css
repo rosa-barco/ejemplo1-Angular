@@ -1,0 +1,78 @@
+.card{
+    padding-top: 50px;
+}
+
+h2{
+    color: #e41e26;
+    text-align: center;
+    margin-top: -45px;
+    margin-bottom: 25px;
+    background-color: #FFFFFF;
+    width: 200px;
+}
+
+.botones{
+    text-align: center;
+}
+
+.btn{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 150px;
+    font-size: 1.3rem;
+}
+
+.row{
+    align-content: center;
+}
+
+.col-6{
+    margin-left: 35px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 45%;
+    border-radius: 25px;
+    border: 3px solid #e41e26;
+    display: inline-block;
+}
+
+.cajaBaja{
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color: #e41e26;
+    border-color: #e41e26;
+}
+
+.btn:hover{
+    background-color: #A11A20;
+    border-color: #A11A20;
+}
+
+label, input, form{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.rad{
+    width: 25%;
+    display: inline;
+}
+
+.texto{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+h3{
+    color: #e41e26;
+}

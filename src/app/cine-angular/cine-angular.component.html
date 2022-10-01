@@ -1,0 +1,59 @@
+<div class="card">
+    <div class="card-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_de_Cinemex.svg"
+        [style.width.px]="imageWidth"
+        [style.margin.px]="imageMargin">
+    </div>
+    <div class="row">
+        <h1>¡Bienvenido!</h1>
+        <div class="col-6">
+            <b><h2>Entradas</h2></b>
+            <b><p class="texto">Precio de boletos: $12 | Cantidad máxima por persona: 7 boletos</p></b>
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre: </label>
+                <input type="text" class="form-control" name="name" placeholder="Nombre Completo"
+                [(ngModel)]="name">
+                <br>
+                <label for="" class="form-label">Cantidad de compradores: </label>
+                <input type="number" class="form-control" name="compra" placeholder=""
+                [(ngModel)]="compra">
+                <br>
+                <label for="" class="form-label">Tarjeta Cineco: </label>
+                <form class="form-control">
+                    <input class="rad" type="radio" id="si" name="tarjeta" value="1" [(ngModel)]="tarjeta">
+                    <label class="rad" for="suma">Sí</label><br>
+                    <input class="rad" type="radio" id="no" name="tarjeta" value="2" [(ngModel)]="tarjeta">
+                    <label class="rad" for="resta">No</label><br>
+                </form>
+                <br>
+                <label for="" class="form-label">Cantidad de boletos: </label>
+                <input type="number" class="form-control" name="boletos" placeholder=""
+                [(ngModel)]="boletos">
+            </div>
+        </div>
+        <div class="col-6">
+            <h2>Resultado</h2>
+            <div class="mb-3">
+                <label for="" class="form-label">Valor a pagar: </label>
+                <p>{{resultado}}</p>
+                <br>
+                <h3>{{mensaje}}</h3>
+            </div>
+            <div class="mb-3" [style.display]="display">
+                <h3>Ticket</h3>
+                <p>Nombre: {{name}}</p>
+                <p>Cantidad de boletos: {{boletos}}</p>
+                <p>Cantidad maxima de boletos: {{compra * 7}}</p>
+                <p>Total a pagar: {{resultado}}</p>
+            </div>
+        </div>
+        <div class="col-6 cajaBaja">
+            <h2>Acciones</h2>
+            <div class="mb-3 botones">
+                <h4 [style.display]="display2">¡Llene todo el formulario para continuar!</h4>
+                <button class="btn btn-primary" (click)="compraBoletos()">Procesar</button>
+                <button class="btn btn-primary" (click)="limpiar()">Limpiar</button>
+            </div>
+        </div>
+    </div>
+</div>

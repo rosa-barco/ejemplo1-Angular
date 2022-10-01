@@ -1,0 +1,51 @@
+thead{
+    color: #B1B2FF;
+    background-color: #EEF1FF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn{
+    background-color: #B1B2FF;
+    border-color: #B1B2FF;
+}
+
+.btn:hover{
+    background-color: #937DC2;
+    border-color: #937DC2;
+}
+
+.card-header{
+    background-color: #EEF1FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-header{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.caja1{
+    padding: 20px;
+}
+
+.table{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.row{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card{
+    padding-top: 50px;
+}
