@@ -1,0 +1,150 @@
+<div class="card">
+    <div class="card-header">
+        <h1>Examen</h1>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <table class="table">
+                    <thead>
+                        <th colspan="4">
+                            <label for="" class="form-label">Pregunta 1: ¿Quién pintó la Mona Lisa?</label>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="radio" id="a11" name="pregunta1" value="i" [(ngModel)]="respuesta1">
+                                <br><label for="a11">Leonardo DiCaprio</label><br></td>
+                            <td><input type="radio" id="a21" name="pregunta1" value="in" [(ngModel)]="respuesta1">
+                                <br><label for="a21">Salvador Dalí</label><br></td>
+                            <td><input type="radio" id="a31" name="pregunta1" value="c" [(ngModel)]="respuesta1">
+                                <br><label for="a31">Leonardo da Vinci*</label><br></td>
+                            <td><input type="radio" id="a41" name="pregunta1" value="inc" [(ngModel)]="respuesta1">
+                                <br><label for="a41">Diego Rivera</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
+                        <th colspan="4">
+                            <label for="" class="form-label">Pregunta 2: ¿Qué bebida es vital para el cuerpo humano?</label>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="radio" id="a12" name="pregunta2" value="i" [(ngModel)]="respuesta2">
+                                <br><label for="a12">Coca-cola</label><br></td>
+                            <td><input type="radio" id="a22" name="pregunta2" value="in" [(ngModel)]="respuesta2">
+                                <br><label for="a22">Agüita de limon con chia</label><br></td>
+                            <td><input type="radio" id="a32" name="pregunta2" value="inc" [(ngModel)]="respuesta2">
+                                <br><label for="a32">Leche</label><br></td>
+                            <td><input type="radio" id="a42" name="pregunta2" value="c" [(ngModel)]="respuesta2">
+                                <br><label for="a42">Agua pura*</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
+                        <th colspan="4">
+                            <label for="" class="form-label">Pregunta 3: ¿Quién es el autor de la frase "Pienso, luego existo"?</label>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="radio" id="a13" name="pregunta3" value="c" [(ngModel)]="respuesta3">
+                                <br><label for="a13">Descartes*</label><br></td>
+                            <td><input type="radio" id="a23" name="pregunta3" value="i" [(ngModel)]="respuesta3">
+                                <br><label for="a23">Platón</label><br></td>
+                            <td><input type="radio" id="a33" name="pregunta3" value="in" [(ngModel)]="respuesta3">
+                                <br><label for="a33">Sócrates</label><br></td>
+                            <td><input type="radio" id="a43" name="pregunta3" value="inc" [(ngModel)]="respuesta3">
+                                <br><label for="a43">Jesucristo</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
+                        <th colspan="4">
+                            <label for="" class="form-label">Pregunta 4: ¿Cuál es el organo más grande del cuerpo humano?</label>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="radio" id="a14" name="pregunta4" value="i" [(ngModel)]="respuesta4">
+                                <br><label for="a14">La Lengua</label><br></td>
+                            <td><input type="radio" id="a24" name="pregunta4" value="in" [(ngModel)]="respuesta4">
+                                <br><label for="a24">El Hígado</label><br></td>
+                            <td><input type="radio" id="a34" name="pregunta4" value="inc" [(ngModel)]="respuesta4">
+                                <br><label for="a34">El Cerebro</label><br></td>
+                            <td><input type="radio" id="a44" name="pregunta4" value="c" [(ngModel)]="respuesta4">
+                                <br><label for="a44">La Piel*</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
+                        <th colspan="4">
+                            <label for="" class="form-label">Pregunta 5: ¿Cuál es el animal terrestre más grande en la actualidad?</label>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="radio" id="a15" name="pregunta5" value="i" [(ngModel)]="respuesta5">
+                                <br><label for="a15">Jirafa</label><br></td>
+                            <td><input type="radio" id="a25" name="pregunta5" value="in" [(ngModel)]="respuesta5">
+                                <br><label for="a25">Ballena Azúl</label><br></td>
+                            <td><input type="radio" id="a35" name="pregunta5" value="inc" [(ngModel)]="respuesta5">
+                                <br><label for="a35">Tiburón blanco</label><br></td>
+                            <td><input type="radio" id="a45" name="pregunta5" value="c" [(ngModel)]="respuesta5">
+                                <br><label for="a45">Elefante africano*</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3"  [style.display]="display">
+                <h3>Resultados</h3>
+                <p>Total de respuestas correctas: <b>{{total}}</b>.</p>
+                <p>Total de respuestas incorrectas: <b>{{totalmal}}</b>.</p>
+                <p>Promedio (sobre 10): <b>{{prom}}</b>.</p>
+                <p><b>{{aprob}}</b>.</p>
+                <h3>Respuestas</h3>
+                <input type="button" class="btn btn2 btn-primary" value="Pregunta 1" (click)="respuestas(1)">
+                <input type="button" class="btn btn2 btn-primary" value="Pregunta 2" (click)="respuestas(2)">
+                <input type="button" class="btn btn2 btn-primary" value="Pregunta 3" (click)="respuestas(3)">
+                <input type="button" class="btn btn2 btn-primary" value="Pregunta 4" (click)="respuestas(4)">
+                <input type="button" class="btn btn2 btn-primary" value="Pregunta 5" (click)="respuestas(5)">
+                
+                <div [style.display]="display1">
+                    <p>Respuesta correcta: <b>Leonardo da Vinci</b></p>
+                    <p>La Mona Lisa, el cuadro de Leonardo da Vinci que se exhibe en el Louvre de París.</p>
+                </div>
+                <div [style.display]="display2">
+                    <p>Respuesta correcta: <b>Agua pura</b></p>
+                    <p>El agua representa el 80% de la composición de la mayoría de los organismos e interviene masiva y decisivamente en la realización de sus procesos metabólicos.</p>
+                </div>
+                <div [style.display]="display3">
+                    <p>Respuesta correcta: <b>Descartes</b></p>
+                    <p>"Je pense, donc je suis" es la frase original, escrita en francés, del filósofo René Descartes (1596-1650). Esta frase resume el pensamiento y el método de Descartes, para quien todo se inicia con la duda.</p>
+                </div>
+                <div [style.display]="display4">
+                    <p>Respuesta correcta: <b>La Piel</b></p>
+                    <p>La piel es el órgano más grande del cuerpo humano, en un adulto promedio posee una superficie aproximada de 2 metros cuadrados y pesa alrededor de 5 kg.</p>
+                </div>
+                <div [style.display]="display5">
+                    <p>Respuesta correcta: <b>Elefante africano</b></p>
+                    <p>El elefante africano es animal terrestre más grande. Puede medir hasta 4 metros de altura y 7 metros de largo y pesar hasta 8 toneladas.</p>
+                </div>
+            </div>
+            <div class="mb-3"  [style.display]="display6">
+                <h2>{{mensaje}}</h2>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3">
+                <input type="button" class="btn btn-primary" value="Limpiar" (click)="limpiar()">
+                <input type="button" class="btn btn-primary" value="Resultado" (click)="examen()">
+            </div>
+        </div>
+</div>

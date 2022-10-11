@@ -1,0 +1,97 @@
+.card-header{
+    background-color: #BC0F00;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1{
+    color: #FF9356;
+    display: inline;
+}
+
+.img{
+    width: 4%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 100px;
+    background-color: antiquewhite;
+}
+
+.si{
+    border: 1.3px solid #FF9356;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 48%;
+}
+
+.col-6{
+    margin-top: -20px;
+    width: 48%;
+}
+
+.btn{
+    background-color: #DC363E;
+    border-color: #DC363E;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #B7242C;
+    border-color: #B7242C;
+}
+
+b{
+    color: #B7242C;
+    font-size: 1.4rem;
+}
+
+.rowing{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.row{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h3{
+    color: #BC0F00;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card{
+    padding-top: 50px;
+}
+
+.labe{
+    margin-left: -30px;
+}
+
+.inp{
+    width: 35%;
+    display: inline;
+}
+
+input, form{
+    width: 75%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+label{
+    width: 23%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}

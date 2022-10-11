@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
 
-import { routing } from './app-routing.module';
+import { AppRoutingModule, routing } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
@@ -13,6 +13,8 @@ import { CineAngularComponent } from './cine-angular/cine-angular.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SignoComponent } from './examen/signo/signo.component';
+import { ExamenComponent } from './examen/examen/examen.component';
 
 
 @NgModule({
@@ -22,12 +24,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProductoFiltroPipe,
     OperasBasComponent,
     CineAngularComponent,
-    MenuComponent
+    MenuComponent,
+    SignoComponent,
+    ExamenComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     FontAwesomeModule,
+    AppRoutingModule,
     routing
   ],
   providers: [],

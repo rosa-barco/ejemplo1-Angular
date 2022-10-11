@@ -1,0 +1,74 @@
+<div class="card">
+    <div class="card-header">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/rata@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/bufalo@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/tigre@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/conejo@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/dragon@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/serpiente@2x.png">
+        <b><h1>Signo Zodiacal Chino</h1></b>
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/caballo@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/cabra@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/mono@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/gallo@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/perro@2x.png">
+        <img class="img" src="https://www.clarin.com/pages/bundles/horoscopochino/images/cerdo@2x.png">
+    </div>
+    <div class="row">
+        <div class="col- si">
+            <div class="mb-3">
+                <h3>Datos Personales</h3>
+                <label for="" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre" placeholder="Ingresa tu nombre"  [(ngModel)]="nombre">
+                <br><label for="" class="form-label">Apellido Paterno</label>
+                <input type="text" class="form-control" name="ap" placeholder="Ingresa tu apellido paterno"  [(ngModel)]="apaterno">
+                <br><label for="" class="form-label">Apellido Materno</label>
+                <input type="text" class="form-control" name="am" placeholder="Ingresa tu apellido materno"  [(ngModel)]="amaterno">
+                <br>
+            </div>
+            <div class="mb-3">
+                <h3>Fecha de nacimiento</h3>
+                <label for="" class="form-label">Día (DD)</label>
+                <input type="number" class="form-control" name="dia" placeholder="" max="31" min="1"  [(ngModel)]="dia">
+                <br><label for="" class="form-label">Mes (MM)</label>
+                <input type="number" class="form-control" name="mes" placeholder="" max="12" min="1"  [(ngModel)]="mes">
+                <br><label for="" class="form-label">Año (AAAA)</label>
+                <input type="number" class="form-control" name="year" placeholder="" max="2004" min="1900"  [(ngModel)]="year">
+            </div>
+            <div class="mb-3">
+                <h3>Sexo</h3>
+                <form>
+                    <input class="inp" type="radio" id="mujer" name="sexo" value="1"  [(ngModel)]="sexo">
+                    <label class="labe" for="mujer">Femenino</label>
+                    <input class="inp" type="radio" id="hombre" name="sexo" value="2"  [(ngModel)]="sexo">
+                    <label class="labe" for="hombre">Másculino</label>
+                </form>
+            </div>
+        </div>
+        <div class="col- si">
+            <div class="mb-3 rowing" [style.display]="display">
+                <h3>Resultados</h3>
+                <p><b>{{saludo}}</b></p>
+                <p>Hola <b>{{nombre}} {{apaterno}} {{amaterno}}</b>.</p>
+                <p>Tienes <b>{{edad}}</b> años.</p>
+                <p>Tu signo zodiacal Chino es:</p>
+                <p><b>{{textoSigno}}</b></p>
+                <p>
+                    <img [src]="textoUrl"
+                    [style.width.px]="imageWidth"
+                    [style.margin.px]="imageMargin"
+                    >
+                </p>
+            </div>
+            <div class="mb-3 rowing" [style.display]="display2">
+                <h3>Elije un año válido</h3>
+                <p>Entre 1900 y 2004</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3">
+                <input type="button" class="btn btn-primary" value="Limpiar" (click)="limpiar()">
+                <input type="button" class="btn btn-primary" value="Resultado" (click)="Signos()">
+            </div>
+        </div>
+</div>

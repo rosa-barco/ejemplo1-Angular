@@ -1,0 +1,67 @@
+.btn{
+    background-color: #54BAB9;
+    border-color: #54BAB9;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn2{
+    margin-left: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 19%;
+}
+
+.btn:hover{
+    background-color: #3E9493;
+    border-color: #3E9493;
+}
+
+.card-header{
+    background-color: #54BAB9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: #F7ECDE;
+}
+
+b{
+    color: #3E9493;
+    font-size: 1.3rem;
+}
+
+.caja1{
+    padding: 20px;
+}
+
+.table{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.row{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#54BAB9;
+}
+
+.card{
+    padding-top: 50px;
+}
+
+thead{
+    color: #54BAB9;
+    background-color: #F7ECDE;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+}
